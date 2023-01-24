@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(helloCGWorld LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../")
+add_subdirectory(../../../3dparty/glfw-3.3.8 glfw)
+find_package(OpenGL REQUIRED)
+add_executable(helloCGWorld main.cpp)
+target_link_libraries(helloCGWorld glfw)
+target_link_libraries(helloCGWorld OpenGL)
