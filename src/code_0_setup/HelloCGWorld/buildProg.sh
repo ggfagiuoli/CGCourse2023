@@ -1,0 +1,3 @@
+cd ./CMAKE
+cmake ../ ./
+make

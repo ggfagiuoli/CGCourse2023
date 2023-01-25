@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2023-01-24T20:22:43. -->
+<!-- Written by QtCreator 4.11.0, 2023-01-25T17:35:07. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -398,7 +398,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/tmp/QtCreator-LBQCVc</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_0_setup</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>
