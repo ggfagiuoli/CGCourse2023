@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/box2DD.dir/main.cpp.o  -o /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/box2DD  glfw/src/libglfw3.a ../../../3dparty/glew/lib/libGLEW.so -lOpenGL /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so -lpthread 
