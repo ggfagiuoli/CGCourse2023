@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "renderable.h"
+#include <cmath>
 
 struct shape {
 	std::vector<float> positions;

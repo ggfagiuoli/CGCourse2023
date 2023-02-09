@@ -82,7 +82,7 @@ int main(void)
     glfwMakeContextCurrent(window);
     glewInit();
 
-    int nindexes = create_box2d(20,20);
+    int nindexes = create_box2d(2,3);
 
     std::string vertex_shader_src = "#version 330\n \
     in vec2 aPosition;\
