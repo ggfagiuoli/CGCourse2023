@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\3dparty\;CMake Files\..\..\..\3dparty\glfw\;CMake Files\..\..\..\3dparty\glfw\src\;CMake Files\..\..\..\3dparty\glm\;CMake Files\..\..\..\3dparty\glm\glm\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/build-Picking-Desktop-Debug/glm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/build-Picking-Desktop-Debug/glm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/build-Picking-Desktop-Debug/glm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/build-Picking-Desktop-Debug/glm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/build-Picking-Desktop-Debug/glm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glm\"/>
+		</Unit>
+		<Unit filename="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/../../../3dparty/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\..\3dparty\glm\glm\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
