@@ -24,6 +24,9 @@ struct matrix_stack {
 	void mult(glm::mat4 m) {
 		_stack.back() = _stack.back()*m;
 	}
+        void invMult(glm::mat4 m){
+            _stack.back() = m*_stack.back();
+        }
 	void load(glm::mat4 m) {
 		_stack.back() = m;
 	}
