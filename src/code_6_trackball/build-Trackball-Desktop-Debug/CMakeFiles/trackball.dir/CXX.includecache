@@ -21,6 +21,20 @@ OpenGL/glu.h
 -
 GL/glu.h
 -
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include/GLFW/glfw3.h
 stddef.h

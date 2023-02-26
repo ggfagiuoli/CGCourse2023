@@ -79,7 +79,11 @@ int main(void)
     {
 		it++;
 		/*incremente the rotation by 0.01 radians*/
+<<<<<<< HEAD
 		R = glm::rotate(R, 0.01f, glm::vec3(0.f, 1.f, 0.f));
+=======
+		R = glm::rotate(R, 0.5f, glm::vec3(0.f, 1.f, 0.f));
+>>>>>>> parent/devel
 
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);

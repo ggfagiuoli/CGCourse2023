@@ -24,9 +24,12 @@ struct matrix_stack {
 	void mult(glm::mat4 m) {
 		_stack.back() = _stack.back()*m;
 	}
+<<<<<<< HEAD
         void invMult(glm::mat4 m){
             _stack.back() = m*_stack.back();
         }
+=======
+>>>>>>> parent/devel
 	void load(glm::mat4 m) {
 		_stack.back() = m;
 	}
@@ -37,4 +40,8 @@ struct matrix_stack {
 	const glm::mat4 & m() { return _stack.back(); }
 private:
 	std::vector < glm::mat4 > _stack;
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> parent/devel

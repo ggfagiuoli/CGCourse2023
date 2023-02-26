@@ -458,9 +458,8 @@ struct shape_maker {
 		 s.vn = static_cast<unsigned int> (s.positions.size() / 3);
 		 s.fn = static_cast<unsigned int> (s.indices.size() / 3);
 
-<<<<<<< HEAD
 	};
-=======
+
 	 }
 	 static renderable sphere() {
 		 renderable res;
@@ -470,4 +469,6 @@ struct shape_maker {
 		 return res;
 	 }
 	};
->>>>>>> parent/main
+
+	};
+

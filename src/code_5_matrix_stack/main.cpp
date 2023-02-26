@@ -34,7 +34,11 @@ int main(void)
 		return -1;
 
 	/* Create a windowed mode window and its OpenGL context */
+<<<<<<< HEAD
 	window = glfwCreateWindow(1000, 800, "code_4_my_first_car", NULL, NULL);
+=======
+	window = glfwCreateWindow(1000, 800, "code_5_matrix_stack", NULL, NULL);
+>>>>>>> parent/devel
 	if (!window)
 	{
 		glfwTerminate();
@@ -54,8 +58,11 @@ int main(void)
 	basic_shader.bind("uV");
 	basic_shader.bind("uT");
 	basic_shader.bind("uColor");
+<<<<<<< HEAD
 	check_shader(basic_shader.vs);
 	check_shader(basic_shader.fs);
+=======
+>>>>>>> parent/devel
 	validate_shader_program(basic_shader.pr);
 
 	/* Set the uT matrix to Identity */
@@ -145,7 +152,11 @@ int main(void)
 		/* Render here */
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+<<<<<<< HEAD
 		glm::mat4 M = view*R;
+=======
+		glm::mat4 M = view;
+>>>>>>> parent/devel
 		glUseProgram(basic_shader.pr);
 		glUniformMatrix4fv(basic_shader["uP"], 1, GL_FALSE, &proj[0][0]);
 		glUniformMatrix4fv(basic_shader["uV"], 1, GL_FALSE, &M[0][0]);
