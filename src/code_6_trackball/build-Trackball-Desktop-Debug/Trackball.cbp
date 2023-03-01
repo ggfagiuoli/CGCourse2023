@@ -86,7 +86,7 @@
 				<Compiler>
 					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_6_trackball/Trackball/../../../3dparty/glew/include"/>
 					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include"/>
-					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm"/>
+					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/.."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -111,7 +111,7 @@
 				<Compiler>
 					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_6_trackball/Trackball/../../../3dparty/glew/include"/>
 					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include"/>
-					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm"/>
+					<Add directory="/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/.."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>

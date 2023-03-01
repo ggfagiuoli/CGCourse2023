@@ -65,7 +65,6 @@ CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/from
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/type_vec4_simd.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/exponential.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext.hpp
-CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/_matrix_vectorize.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_clip_space.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_clip_space.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_common.hpp
@@ -174,8 +173,6 @@ CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/from
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_integer.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.inl
-CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.hpp
-CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_uint_sized.hpp
@@ -219,8 +216,6 @@ CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/from
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_integer.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.inl
-CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.hpp
-CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_uint1.hpp
@@ -262,6 +257,7 @@ CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/from
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/random.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/random.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/reciprocal.hpp
+CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/reciprocal.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/round.hpp
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/round.inl
 CMakeFiles/trackball.dir/main.cpp.o: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/type_aligned.hpp

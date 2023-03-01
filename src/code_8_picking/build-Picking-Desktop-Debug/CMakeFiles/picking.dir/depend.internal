@@ -66,7 +66,6 @@ CMakeFiles/picking.dir/main.cpp.o
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/type_vec4_simd.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/exponential.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext.hpp
- /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/_matrix_vectorize.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_clip_space.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_clip_space.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_common.hpp
@@ -175,8 +174,6 @@ CMakeFiles/picking.dir/main.cpp.o
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_integer.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.inl
- /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.hpp
- /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_uint_sized.hpp
@@ -220,8 +217,6 @@ CMakeFiles/picking.dir/main.cpp.o
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_integer.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.inl
- /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.hpp
- /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.inl
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_uint1.hpp
@@ -392,3 +387,8 @@ CMakeFiles/picking.dir/main.cpp.o
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/vec4.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/vector_relational.hpp
  /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_8_picking/Picking/main.cpp
+ /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/debugging.h
+ /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/matrix_stack.h
+ /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/renderable.h
+ /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/shaders.h
+ /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/simple_shapes.h

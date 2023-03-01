@@ -1,4 +1,4 @@
-# Install script for directory: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/box2d
+# Install script for directory: /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,18 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/build-box2d-Desktop-Debug/glfw/cmake_install.cmake")
-  include("/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/build-box2d-Desktop-Debug/glm/cmake_install.cmake")
+  include("/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/build-box2d-Desktop-Debug/glm/glm/cmake_install.cmake")
 
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/build-box2d-Desktop-Debug/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

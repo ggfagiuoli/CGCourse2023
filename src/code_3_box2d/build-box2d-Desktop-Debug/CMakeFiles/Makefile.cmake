@@ -13,6 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/src/glfw3.pc.in"
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/src/glfw3Config.cmake.in"
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/src/glfw_config.h.in"
+  "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/CMakeLists.txt"
+  "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/CMakeLists.txt"
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/box2d/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
@@ -69,6 +71,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "glm/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

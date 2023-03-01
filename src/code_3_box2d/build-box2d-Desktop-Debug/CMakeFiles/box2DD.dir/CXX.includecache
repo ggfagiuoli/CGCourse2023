@@ -69,13 +69,13 @@ GL/glext.h
 -
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/box2d/main.cpp
-iostream
--
-string
--
 GL/glew.h
 -
 GLFW/glfw3.h
+-
+string
+-
+iostream
 -
 ../../common/debugging.h
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/common/debugging.h

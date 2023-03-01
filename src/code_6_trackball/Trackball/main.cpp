@@ -8,13 +8,10 @@
 #include "../../common/simple_shapes.h"
 #include "../../common/matrix_stack.h"
 
-/* 
-GLM library for math  https://github.com/g-truc/glm 
-it's a header-only library. You can just copy the folder glm into 3dparty
-and set the path properly. 
-*/
-#include <glm/glm.hpp>  
-#include <glm/ext.hpp>  
+
+#include <glm/glm.hpp>
+#include <glm/ext.hpp>
+
 
 /* projection matrix*/
 glm::mat4 proj;

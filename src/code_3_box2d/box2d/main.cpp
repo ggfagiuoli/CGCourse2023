@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <string>
+#include <iostream>
 #include "../../common/debugging.h"
 
 int create_box2d(int x, int y){

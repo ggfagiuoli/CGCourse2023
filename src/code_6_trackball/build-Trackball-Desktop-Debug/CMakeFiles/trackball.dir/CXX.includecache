@@ -21,20 +21,6 @@ OpenGL/glu.h
 -
 GL/glu.h
 -
-stddef.h
--
-inttypes.h
--
-stdint.h
--
-inttypes.h
--
-Availability.h
--
-OpenGL/glu.h
--
-GL/glu.h
--
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include/GLFW/glfw3.h
 stddef.h
@@ -419,8 +405,6 @@ type_quat.inl
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/trigonometric.hpp
 ../exponential.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/exponential.hpp
-../ext/quaternion_common.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/quaternion_common.hpp
 ../ext/quaternion_geometric.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/quaternion_geometric.hpp
 limits
@@ -699,8 +683,6 @@ glm.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_integer.hpp
 ./ext/scalar_packing.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.hpp
-./ext/scalar_reciprocal.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.hpp
 ./ext/scalar_relational.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.hpp
 ./ext/scalar_ulp.hpp
@@ -715,8 +697,6 @@ glm.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_integer.hpp
 ./ext/vector_packing.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.hpp
-./ext/vector_reciprocal.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.hpp
 ./ext/vector_relational.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.hpp
 ./ext/vector_ulp.hpp
@@ -942,8 +922,6 @@ glm.hpp
 ./gtx/range.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtx/range.hpp
 
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/_matrix_vectorize.hpp
-
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_clip_space.hpp
 ../ext/scalar_constants.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_constants.hpp
@@ -967,8 +945,6 @@ matrix_common.inl
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_common.inl
 ../matrix.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/matrix.hpp
-_matrix_vectorize.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/_matrix_vectorize.hpp
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/matrix_double2x2.hpp
 ../detail/type_mat2x2.hpp
@@ -1490,18 +1466,6 @@ scalar_packing.inl
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_packing.inl
 
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.hpp
-../detail/setup.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/setup.hpp
-scalar_reciprocal.inl
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.inl
-
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.inl
-../trigonometric.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/trigonometric.hpp
-limits
--
-
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_relational.hpp
 ../detail/qualifier.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/qualifier.hpp
@@ -1720,18 +1684,6 @@ vector_packing.inl
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_packing.inl
 
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.hpp
-../detail/setup.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/setup.hpp
-vector_reciprocal.inl
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.inl
-
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.inl
-../trigonometric.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/trigonometric.hpp
-limits
--
-
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_relational.hpp
 ../detail/qualifier.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/qualifier.hpp
@@ -1937,10 +1889,6 @@ epsilon.inl
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/integer.hpp
 ../exponential.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/exponential.hpp
-../ext/scalar_common.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_common.hpp
-../ext/vector_common.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_common.hpp
 limits
 -
 integer.inl
@@ -2145,10 +2093,14 @@ cmath
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/reciprocal.hpp
 ../detail/setup.hpp
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/detail/setup.hpp
-../ext/scalar_reciprocal.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_reciprocal.hpp
-../ext/vector_reciprocal.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/vector_reciprocal.hpp
+reciprocal.inl
+/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/reciprocal.inl
+
+/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/reciprocal.inl
+../trigonometric.hpp
+/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/trigonometric.hpp
+limits
+-
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/round.hpp
 ../detail/setup.hpp
@@ -2563,10 +2515,8 @@ matrix_interpolation.inl
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtx/matrix_interpolation.inl
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtx/matrix_interpolation.inl
-../ext/scalar_constants.hpp
-/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/ext/scalar_constants.hpp
-limits
--
+../gtc/constants.hpp
+/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtc/constants.hpp
 
 /home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/gtx/matrix_major_storage.hpp
 ../glm.hpp

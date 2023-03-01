@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_6_trackball/Trackball/../../../3dparty/glew/include -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm 
+CXX_INCLUDES = -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_6_trackball/Trackball/../../../3dparty/glew/include -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include -I/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/.. 
 

@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_6_trackball/Trackball/../../../3dparty/glew/include"
   "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glfw/include"
-  "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm"
+  "/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm/glm/.."
   )
 
 # Targets to which this target links.

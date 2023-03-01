@@ -3,12 +3,12 @@
 #include <string>
 #include <iostream>
 #include <algorithm>
-#include <conio.h>
-#include "..\common\debugging.h"
-#include "..\common\renderable.h"
-#include "..\common\shaders.h"
-#include "..\common\simple_shapes.h"
-#include "..\common\matrix_stack.h"
+#include <curses.h>
+#include "../../common/debugging.h"
+#include "../../common/renderable.h"
+#include "../../common/shaders.h"
+#include "../../common/simple_shapes.h"
+#include "../../common/matrix_stack.h"
 
 /*
 GLM library for math  https://github.com/g-truc/glm
@@ -25,6 +25,12 @@ glm::mat4 proj;
 
 /* view matrix and view_frame*/
 glm::mat4 view, view_frame;
+
+std::vector<glm::mat4> cube_trackballs;
+
+glm::mat4 translation_matrix = glm::mat4(1.f);
+
+int selected_id = -1;
 
 /* a bool variable that indicates if we are currently rotating the trackball*/
 bool is_trackball_dragged;
@@ -44,6 +50,9 @@ renderable r_cube,r_sphere,r_frame, r_plane;
 
 /* program shaders used */
 shader basic_shader,flat_shader;
+
+std::vector<glm::vec3> cubes_pos;
+
 
 /* transform from viewpoert to window coordinates in thee view reference frame */
 glm::vec2 viewport_to_view(double pX, double pY) {
@@ -102,14 +111,17 @@ static void cursor_position_callback(GLFWwindow* window, double xpos, double ypo
     if (!is_trackball_dragged)
         return;
 
+    if(selected_id<0){return;}
+
     if (cursor_sphere_intersection(p1, xpos, ypos)) {
         glm::vec3 rotation_vector = glm::cross(glm::normalize(p0), glm::normalize(p1));
+
 
         /* avoid near null rotation axis*/
         if (glm::length(rotation_vector) > 0.01) {
             float alpha = glm::asin(glm::length(rotation_vector));
             glm::mat4 delta_rot = glm::rotate(glm::mat4(1.f), alpha, rotation_vector);
-            trackball_matrix = delta_rot * trackball_matrix;
+            cube_trackballs[selected_id] = delta_rot * cube_trackballs[selected_id];
 
             /*p1 becomes the p0 value for the next movement */
             p0 = p1;
@@ -145,6 +157,10 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
             int id = colu[0] + (colu[1] << 8) + (colu[2] << 16);
             std::cout << "selected ID: " << id << std::endl;
+
+            if(cubes_pos.size() <= id-200){return;}
+            translation_matrix = glm::translate(glm::mat4(1.f),-cubes_pos[id-200]);
+            selected_id = id-200;
         }
         else
         if (cursor_sphere_intersection(int_point, xpos, ypos)) {
@@ -219,6 +235,11 @@ int main(void)
     check_shader(flat_shader.fs);
     validate_shader_program(flat_shader.pr);
 
+    cube_trackballs.push_back(glm::mat4(1.f));
+    cube_trackballs.push_back(glm::mat4(1.f));
+    cube_trackballs.push_back(glm::mat4(1.f));
+    cube_trackballs.push_back(glm::mat4(1.f));
+
     /* Set the uT matrix to Identity */
     glUseProgram(basic_shader.pr);
     glUniformMatrix4fv(basic_shader["uT"], 1, GL_FALSE, &glm::mat4(1.0)[0][0]);
@@ -230,7 +251,6 @@ int main(void)
 
     /* create a  cube   centered at the origin with side 2*/
     r_cube = shape_maker::cube(0.5f, 0.3f, 0.0);
-    std::vector<glm::vec3> cubes_pos;
     cubes_pos.push_back(glm::vec3(2, 0, 0));
     cubes_pos.push_back(glm::vec3(0, 2, 0));
     cubes_pos.push_back(glm::vec3(-2, 0, 0));
@@ -292,7 +312,80 @@ int main(void)
         check_gl_errors(__LINE__, __FILE__);
 
         stack.push();
-        stack.mult(scaling_matrix *trackball_matrix);
+        stack.mult(scaling_matrix * translation_matrix);
+
+        /* show the plane in flat-wire (filled triangles plus triangle contours) */
+        // step 1: render the plane flat
+        glUseProgram(flat_shader.pr);
+        r_plane.bind();
+        stack.push();
+        glUniformMatrix4fv(flat_shader["uT"], 1, GL_FALSE, &stack.m()[0][0]);
+        glUniform4f(basic_shader["uColor"], 1.0, 1.0, 1.0, 1.0);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, r_plane.inds[1].ind);
+        glDrawElements(GL_LINES, r_plane.inds[1].count, GL_UNSIGNED_INT, 0);
+
+
+        glUseProgram(basic_shader.pr);
+
+        // enable polygon offset functionality
+        glEnable(GL_POLYGON_OFFSET_FILL);
+
+        // set offset function
+        glPolygonOffset(1.0, 1.0);
+
+        glUniformMatrix4fv(basic_shader["uT"], 1, GL_FALSE, &stack.m()[0][0]);
+
+        glUniform3f(basic_shader["uColor"], 0.8,0.8,0.8);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, r_plane.ind);
+        glDrawElements(GL_TRIANGLES, r_plane.in, GL_UNSIGNED_INT, 0);
+
+        // disable polygon offset
+        glDisable(GL_POLYGON_OFFSET_FILL);
+        stack.pop();
+        //  end flat wire
+
+        glUseProgram(basic_shader.pr);
+        glUniformMatrix4fv(basic_shader["uT"], 1, GL_FALSE, &stack.m()[0][0]);
+        glUniform3f(basic_shader["uColor"], -1.0, 0.0, 1.0);
+        r_frame.bind();
+        glDrawArrays(GL_LINES, 0, 6);
+        glUseProgram(0);
+
+
+        r_cube.bind();
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, r_cube.ind);
+
+
+        glUseProgram(flat_shader.pr);
+
+        for (unsigned int id = 0; id < cubes_pos.size(); ++id) {
+            float r = ( (id+200  ) & 0x000000FF) / 255.f;
+            float g = (( (id + 200) & 0x0000FF00) >> 8) / 255.f;
+            float b = (( (id + 200) & 0x00FF0000) >> 16) / 255.f;
+            stack.push();
+            stack.mult(glm::translate(glm::mat4(1.f), cubes_pos[id]));
+            stack.mult(glm::scale(glm::mat4(1.f), glm::vec3(0.5f, 0.5f, 0.5f)));
+            stack.mult(cube_trackballs[id]);
+            glUniformMatrix4fv(flat_shader["uT"], 1, GL_FALSE, &stack.m()[0][0]);
+            glUniform4f(flat_shader["uColor"], r, g, b, 1.0);
+            glDrawElements(GL_TRIANGLES, r_cube.in, GL_UNSIGNED_INT, 0);
+            stack.pop();
+        }
+        glUseProgram(0);
+        stack.pop();
+
+        check_gl_errors(__LINE__, __FILE__);
+
+        /* Poll for and process events */
+        glfwPollEvents();
+
+        glClearColor(0.0, 0.0, 0.0, 1.0);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+
+        check_gl_errors(__LINE__, __FILE__);
+
+        stack.push();
+        stack.mult(scaling_matrix * translation_matrix);
 
         /* show the plane in flat-wire (filled triangles plus triangle contours) */
         // step 1: render the plane flat
@@ -345,21 +438,17 @@ int main(void)
             stack.push();
             stack.mult(glm::translate(glm::mat4(1.f), cubes_pos[id]));
             stack.mult(glm::scale(glm::mat4(1.f), glm::vec3(0.5f, 0.5f, 0.5f)));
+            stack.mult(cube_trackballs[id]);
             glUniformMatrix4fv(flat_shader["uT"], 1, GL_FALSE, &stack.m()[0][0]);
-            glUniform4f(flat_shader["uColor"], r, g, b, 1.0);
+            glUniform4f(flat_shader["uColor"], 0.0, 1.0, 0.0, 1.0);
             glDrawElements(GL_TRIANGLES, r_cube.in, GL_UNSIGNED_INT, 0);
             stack.pop();
         }
         glUseProgram(0);
         stack.pop();
 
-        check_gl_errors(__LINE__, __FILE__);
-
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
-
-        /* Poll for and process events */
-        glfwPollEvents();
     }
 
     glfwTerminate();

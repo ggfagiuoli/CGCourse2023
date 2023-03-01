@@ -552,6 +552,12 @@ box2d_BINARY_DIR:STATIC=/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2
 //Value Computed by CMake
 box2d_SOURCE_DIR:STATIC=/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/box2d
 
+//Value Computed by CMake
+glm_BINARY_DIR:STATIC=/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/src/code_3_box2d/build-box2d-Desktop-Debug/glm
+
+//Value Computed by CMake
+glm_SOURCE_DIR:STATIC=/home/fagio/Documents/ComputerGraphics/fromGit/CGCourse2023/3dparty/glm
+
 //Path to a library.
 pkgcfg_lib_PKG_FONTCONFIG_fontconfig:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 
@@ -717,7 +723,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
